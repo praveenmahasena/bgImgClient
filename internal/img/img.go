@@ -15,7 +15,7 @@ func WriteImg(f []byte)error{
 }
 
 func Set()error{
-	err:=exec.Command("feh","--bg-scale","./bgImg.jpg").Run()
+	err:=exec.Command("feh","--bg-scale","./bgImg.jpg","-b","-X").Run()
 	if err!=nil{
 		return fmt.Errorf("error during setting up bg Img \n %v",err)
 	}

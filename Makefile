@@ -38,5 +38,5 @@ package_race: bgclient_race
 bgclient:
 	go build -o ./bin/bgclient ./cmd/bgclient/
 
-server_race:
+bgclient_race:
 	go build --race -o ./bin/bgclient_race ./cmd/bgclient/
